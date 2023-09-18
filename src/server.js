@@ -1,7 +1,8 @@
 import { randomBytes } from 'node:crypto';
 import { createServer } from 'node:http';
 
-const bufferSize = 1000000;
+// 100 KB
+const bufferSize = 100000;
 const port = 5500;
 
 const server = createServer((req, res) => {

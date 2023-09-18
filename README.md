@@ -1,6 +1,6 @@
 # Bug
 
-This is a bug that occurs when using Bun and Vite, with a reverse proxy for the Vite dev server. 
+This is a bug that occurs when using the Bun runtime and the Vite dev server, which is configured to run on port 3000. Requests to `/api` are reverse proxied to port 5500 where a dummy server is serving a message consisting of 1MB of random bytes. The fetch request occasionally when running with `bunx --bun vite` but does not with `bunx vite`.
 
 ## Reproduce
 
