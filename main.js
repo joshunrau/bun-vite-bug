@@ -15,9 +15,5 @@ server.listen(8000);
 const proxy = httpProxy.createProxyServer({
   target: 'http://localhost:8000'
 });
-proxy.listen(9000);
 
-for (let i = 0; i < 100; i++) {
-  await fetch('http://localhost:9000');
-  console.log(i);
-}
+proxy.listen(9000);

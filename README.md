@@ -6,6 +6,9 @@ This is a bug that occurs when using the Bun runtime and the Vite dev server, wh
 
 ### Step 1: Start Dummy Server in Terminal 1
 
+for i in {1..5}; do echo "Welcome $i times"
+done
+
 ```shell
 bun src/server.js
 ```
@@ -16,3 +19,6 @@ bun src/server.js
 bunx --bun vite
 ```
 
+```shell
+curl localhost:9000
+```
