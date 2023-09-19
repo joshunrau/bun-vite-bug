@@ -1,7 +1,7 @@
 const message = document.createElement('p');
 message.textContent = 'Loading...';
 
-fetch('/api/')
+fetch('/api')
   .then((response) => response.json())
   .then((data) => {
     message.textContent = data.message;
